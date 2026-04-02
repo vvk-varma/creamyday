@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Novelties &#8211; CreamyDay</title>
+<link rel="stylesheet" href="styles.css"/>
+<style>
+.cups-table .price-table-head,.cups-table .price-row{grid-template-columns:1.8fr repeat(3,1fr);}
+.cones-table .price-table-head,.cones-table .price-row{grid-template-columns:1.8fr repeat(2,1fr);}
+@media(max-width:640px){
+  .cups-table .price-table-head,.cups-table .price-row,.cones-table .price-table-head,.cones-table .price-row{font-size:0.8rem;}
+  .cups-table .price-table-head,.cups-table .price-row{grid-template-columns:1.5fr repeat(3,1fr);}
+  .cones-table .price-table-head,.cones-table .price-row{grid-template-columns:1.5fr repeat(2,1fr);}
+}
+.tab-section{padding:3rem 2rem 5rem;max-width:var(--max-w);margin:0 auto;}
+.tab-section-title{font-family:var(--ff-display);font-weight:800;font-size:1.6rem;color:var(--primary);margin-bottom:0.25rem;}
+.tab-section-sub{color:var(--on-surface-soft);font-size:0.88rem;margin-bottom:1.5rem;}
+.sub-label{font-family:var(--ff-display);font-weight:700;color:var(--secondary);text-transform:uppercase;letter-spacing:0.08em;font-size:0.75rem;margin-bottom:1rem;}
+</style>
+</head>
+<body>
+<nav class="nav" id="mainNav">
+  <div class="nav-container">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="CreamyDay" style="height:52px;width:auto;"/></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a><a href="favourites.html">Favourites</a><a href="chocolates.html">Chocolates</a>
+      <a href="naturals.html">Naturals</a><a href="nuts-berries.html">Nuts &amp; Berries</a><a href="concepts.html">Concepts</a><a href="novelties.html" class="active">Novelties</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:0.75rem;"><a href="index.html#enquire" class="btn-pill">Enquire</a><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a><a href="favourites.html">Favourites</a><a href="chocolates.html">Chocolates</a>
+  <a href="naturals.html">Naturals</a><a href="nuts-berries.html">Nuts &amp; Berries</a><a href="concepts.html">Concepts</a><a href="novelties.html">Novelties</a>
+</div>
+
+<header class="cat-header" style="background:linear-gradient(135deg,#fff8f3 60%,#f0fdf8);">
+  <div class="cat-blob" style="background:#c8f0e8;opacity:0.3;"></div>
+  <div class="cat-header-grid">
+    <div class="cat-header-inner" style="position:relative;z-index:2;">
+      <span class="cat-eyebrow">Joy in Every Form</span>
+      <h1 class="cat-title">Novelties</h1>
+      <p class="cat-desc">Cups, cones, bars, juicy sticks, sundaes and kids&#39; specials &#8212; CreamyDay delights for every age. Starting from just &#8377;6.</p>
+    </div>
+    <!-- ID added here, Initial image set to cups.png -->
+    <div class="cat-header-img-wrap">
+        <img src="images/cups.png" alt="CreamyDay Novelties" class="cat-header-img" id="noveltiesHeroImg"/>
+    </div>
+  </div>
+</header>
+
+<div class="tab-nav" id="tabNav">
+  <div class="tab-nav-inner">
+    <button class="tab-btn active" data-tab="cups">&#129380; Cups</button>
+    <button class="tab-btn" data-tab="cones">&#127846; Cones</button>
+    <button class="tab-btn" data-tab="bars">&#127851; Bars &amp; Juicy Sticks</button>
+    <button class="tab-btn" data-tab="kids">&#127881; Kids Sundaes</button>
+    <button class="tab-btn" data-tab="sundaes">&#127847; Sundaes</button>
+  </div>
+</div>
+
+<div class="tab-panel active" id="tab-cups">
+  <div class="tab-section">
+    <div class="tab-section-title">Cups</div>
+    <p class="tab-section-sub">Available in 50ml, 80ml, and 100ml cups. All prices in &#8377;.</p>
+    <div class="cups-table">
+      <div class="price-table-head"><span>Flavour</span><span>50ml Cup</span><span>80ml Cup</span><span>100ml Cup</span></div>
+      <div class="price-row"><div class="price-item-name">Vanilla</div><div class="price-val">&#8377;6</div><div class="price-val">&#8377;10</div><div class="price-val na">&#8212;</div></div>
+      <div class="price-row"><div class="price-item-name">Strawberry</div><div class="price-val">&#8377;6</div><div class="price-val">&#8377;10</div><div class="price-val na">&#8212;</div></div>
+      <div class="price-row"><div class="price-item-name">Pista</div><div class="price-val">&#8377;6</div><div class="price-val">&#8377;10</div><div class="price-val na">&#8212;</div></div>
+      <div class="price-row"><div class="price-item-name">Pineapple</div><div class="price-val">&#8377;6</div><div class="price-val">&#8377;10</div><div class="price-val na">&#8212;</div></div>
+      <div class="price-row"><div class="price-item-name">Butterscotch</div><div class="price-val">&#8377;8</div><div class="price-val na">&#8212;</div><div class="price-val">&#8377;16</div></div>
+      <div class="price-row"><div class="price-item-name">Kaju Kissmiss</div><div class="price-val">&#8377;8</div><div class="price-val na">&#8212;</div><div class="price-val">&#8377;16</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-cones">
+  <div class="tab-section">
+    <div class="tab-section-title">Cones</div>
+    <p class="tab-section-sub">Junior (60ml) and Senior (120ml) wafer cone options. All prices in &#8377;.</p>
+    <div class="cones-table">
+      <div class="price-table-head"><span>Flavour</span><span>Jr. Cone 60ml</span><span>Sr. Cone 120ml</span></div>
+      <div class="price-row"><div class="price-item-name">Vanilla</div><div class="price-val">&#8377;12</div><div class="price-val na">&#8212;</div></div>
+      <div class="price-row"><div class="price-item-name">Butterscotch</div><div class="price-val">&#8377;15</div><div class="price-val">&#8377;25</div></div>
+      <div class="price-row"><div class="price-item-name">Choco Chips</div><div class="price-val">&#8377;15</div><div class="price-val">&#8377;30</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-bars">
+  <div class="tab-section">
+    <div class="tab-section-title">Bars &amp; Juicy Sticks</div>
+    <p class="tab-section-sub">Stick-format ice cream bars and real-fruit juice sticks. All prices in &#8377;.</p>
+    <div class="sub-label">Ice Cream Bars</div>
+    <div class="single-grid" style="margin-bottom:2rem;">
+      <div class="single-card"><div><div class="single-card-name">Jr. Choco Bar</div><div class="single-card-size">35ml</div></div><div class="single-card-price">&#8377;10</div></div>
+      <div class="single-card"><div><div class="single-card-name">Nutty Choco Bar</div><div class="single-card-size">70ml</div></div><div class="single-card-price">&#8377;20</div></div>
+      <div class="single-card"><div><div class="single-card-name">Mango Twin Bar</div><div class="single-card-size">70ml</div></div><div class="single-card-price">&#8377;15</div></div>
+      <div class="single-card"><div><div class="single-card-name">Raspberry Twin Bar</div><div class="single-card-size">70ml</div></div><div class="single-card-price">&#8377;15</div></div>
+    </div>
+    <div class="divider-soft"></div>
+    <div class="sub-label" style="margin-top:2rem;">Juicy Sticks</div>
+    <div class="single-grid">
+      <div class="single-card"><div><div class="single-card-name">Strawberry Juicy</div><div class="single-card-size">60ml</div></div><div class="single-card-price">&#8377;7</div></div>
+      <div class="single-card"><div><div class="single-card-name">Orange Juicy</div><div class="single-card-size">60ml</div></div><div class="single-card-price">&#8377;7</div></div>
+      <div class="single-card"><div><div class="single-card-name">Mango Juicy</div><div class="single-card-size">60ml</div></div><div class="single-card-price">&#8377;7</div></div>
+      <div class="single-card"><div><div class="single-card-name">Grape Juicy</div><div class="single-card-size">60ml</div></div><div class="single-card-price">&#8377;7</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-kids">
+  <div class="tab-section">
+    <div class="tab-section-title">Kids Sundaes</div>
+    <p class="tab-section-sub">Fun, colourful and perfectly portioned for little ones. All 100ml. Prices in &#8377;.</p>
+    <div class="single-grid">
+      <div class="single-card"><div><div class="single-card-name">Vanilla Ball</div><div class="single-card-size">100ml</div></div><div class="single-card-price">&#8377;20</div></div>
+      <div class="single-card"><div><div class="single-card-name">Strawberry Ball</div><div class="single-card-size">100ml</div></div><div class="single-card-price">&#8377;20</div></div>
+      <div class="single-card"><div><div class="single-card-name">Mango Ball</div><div class="single-card-size">100ml</div></div><div class="single-card-price">&#8377;20</div></div>
+      <div class="single-card"><div><div class="single-card-name">Cassata</div><div class="single-card-size">100ml</div></div><div class="single-card-price">&#8377;30</div></div>
+      <div class="single-card"><div><div class="single-card-name">Swinger</div><div class="single-card-size">100ml</div></div><div class="single-card-price">&#8377;30</div></div>
+    </div>
+    <div style="margin-top:2rem;background:#f0fdf8;border-radius:14px;padding:1.2rem 1.6rem;display:flex;gap:0.75rem;align-items:center;">
+      <span style="font-size:1.2rem;">&#128588;</span>
+      <div style="font-size:0.84rem;color:var(--on-surface-soft);line-height:1.65;">All Kids Sundaes are fortified with Vitamin D and use no artificial colours &#8212; safe, fun, and delicious for your little ones.</div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-sundaes">
+  <div class="tab-section">
+    <div class="tab-section-title">Sundaes</div>
+    <p class="tab-section-sub">Premium 100ml sundaes in our most-loved flavours. Prices in &#8377;.</p>
+    <div class="single-grid">
+      <div class="single-card"><div><div class="single-card-name">Butterscotch</div><div class="single-card-size">100ml</div></div><div class="single-card-price">&#8377;30</div></div>
+      <div class="single-card"><div><div class="single-card-name">Choco Chips</div><div class="single-card-size">100ml</div></div><div class="single-card-price">&#8377;30</div></div>
+      <div class="single-card"><div><div class="single-card-name">Black Current</div><div class="single-card-size">100ml</div></div><div class="single-card-price">&#8377;30</div></div>
+      <div class="single-card"><div><div class="single-card-name">American Dry Fruit</div><div class="single-card-size">100ml</div></div><div class="single-card-price">&#8377;40</div></div>
+      <div class="single-card"><div><div class="single-card-name">Creamy Day Special</div><div class="single-card-size">100ml</div></div><div class="single-card-price">&#8377;40</div></div>
+      <div class="single-card"><div><div class="single-card-name">Caramel Nuts</div><div class="single-card-size">100ml</div></div><div class="single-card-price">&#8377;40</div></div>
+      <div class="single-card"><div><div class="single-card-name">Black Forest</div><div class="single-card-size">100ml</div></div><div class="single-card-price">&#8377;40</div></div>
+      <div class="single-card"><div><div class="single-card-name">Seethaphal</div><div class="single-card-size">100ml</div></div><div class="single-card-price">&#8377;40</div></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><img src="images/logo.png" alt="CreamyDay" style="height:52px;width:auto;"/><p>Premium artisanal ice cream. A product of SATYA SAI DAIRY FOODS.</p><span id="footerMailLink"></span></div>
+    <div class="footer-col"><h4>Menu</h4><a href="favourites.html">All Time Favourites</a><a href="chocolates.html">Chocolates</a><a href="naturals.html">Naturals</a><a href="nuts-berries.html">Nuts &amp; Berries</a><a href="concepts.html">Concepts</a><a href="novelties.html">Novelties</a></div>
+    <div class="footer-col"><h4>Company</h4><a href="index.html">Home</a><a href="index.html#enquire">Enquiries</a></div>
+    <div class="footer-col"><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  </div>
+  <div class="footer-bottom"><span>&#169; 2024 SATYA SAI DAIRY FOODS. All rights reserved.</span><button id="backTop" style="background:none;color:rgba(255,248,243,0.35);font-family:var(--ff-body);font-size:0.78rem;cursor:pointer;border:none;">Back to top &#8593;</button></div>
+</footer>
+<script src="app.js"></script>
+<script>(function(){var e='creamyday'+'@'+'rediffmail.com';var fl=document.getElementById('footerMailLink');if(fl){var a=document.createElement('a');a.href='mailto:'+e;a.textContent=e;a.style.color='var(--gold)';fl.appendChild(a);}var bt=document.getElementById('backTop');if(bt)bt.onclick=function(){window.scrollTo({top:0,behavior:'smooth'});};})();</script>
+</body>
+</html>

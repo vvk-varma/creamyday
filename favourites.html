@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>All Time Favourites &#8211; CreamyDay</title>
+<link rel="stylesheet" href="styles.css"/>
+<style>
+.ptable-4 .price-table-head,.ptable-4 .price-row{grid-template-columns:1.6fr repeat(4,1fr);}
+@media(max-width:640px){.ptable-4 .price-table-head,.ptable-4 .price-row{grid-template-columns:1.3fr repeat(4,1fr);font-size:0.78rem;}}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="mainNav">
+  <div class="nav-container">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="CreamyDay" style="height:52px;width:auto;"/></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a><a href="favourites.html" class="active">Favourites</a>
+      <a href="chocolates.html">Chocolates</a><a href="naturals.html">Naturals</a>
+      <a href="nuts-berries.html">Nuts &amp; Berries</a><a href="concepts.html">Concepts</a><a href="novelties.html">Novelties</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:0.75rem;">
+      <a href="index.html#enquire" class="btn-pill">Enquire</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a><a href="favourites.html">Favourites</a><a href="chocolates.html">Chocolates</a>
+  <a href="naturals.html">Naturals</a><a href="nuts-berries.html">Nuts &amp; Berries</a>
+  <a href="concepts.html">Concepts</a><a href="novelties.html">Novelties</a>
+</div>
+
+<header class="cat-header">
+  <div class="cat-blob" style="background:#ffd9dd;opacity:0.3;"></div>
+  <div class="cat-header-grid">
+    <div class="cat-header-inner" style="position:relative;z-index:2;">
+      <span class="cat-eyebrow">The Classics</span>
+      <h1 class="cat-title">All Time<br/>Favourites</h1>
+      <p class="cat-desc">The timeless flavours that defined a generation. Available in four convenient sizes &#8212; from a personal tub to bulk packs for every occasion.</p>
+    </div>
+    <div class="cat-header-img-wrap">
+      <img src="images/favourites.png" alt="All Time Favourites" class="cat-header-img"/>
+    </div>
+  </div>
+</header>
+
+
+
+<div class="price-section">
+  <div class="price-section-title">Flavours &amp; Pricing</div>
+  <p class="price-section-sub">All prices in Indian Rupees (&#8377;). Bulk packs available for wholesale orders.</p>
+
+  <div class="ptable-4">
+    <div class="price-table-head"><span>Flavour</span><span>Tub 500ml</span><span>Tub 1000ml</span><span>Packet 1250ml</span><span>Bulk 4lts</span></div>
+    <div class="price-row"><div class="price-item-name">Vanilla</div><div class="price-val">&#8377;80</div><div class="price-val">&#8377;130</div><div class="price-val">&#8377;100</div><div class="price-val">&#8377;400</div></div>
+    <div class="price-row"><div class="price-item-name">Strawberry</div><div class="price-val">&#8377;80</div><div class="price-val">&#8377;130</div><div class="price-val">&#8377;100</div><div class="price-val">&#8377;400</div></div>
+    <div class="price-row"><div class="price-item-name">Chocolate</div><div class="price-val">&#8377;80</div><div class="price-val">&#8377;130</div><div class="price-val na">&#8212;</div><div class="price-val">&#8377;500</div></div>
+    <div class="price-row"><div class="price-item-name">Pista</div><div class="price-val">&#8377;80</div><div class="price-val">&#8377;130</div><div class="price-val na">&#8212;</div><div class="price-val">&#8377;450</div></div>
+    <div class="price-row"><div class="price-item-name">Pineapple</div><div class="price-val">&#8377;80</div><div class="price-val">&#8377;130</div><div class="price-val na">&#8212;</div><div class="price-val">&#8377;450</div></div>
+    <div class="price-row"><div class="price-item-name">Mango</div><div class="price-val">&#8377;100</div><div class="price-val">&#8377;150</div><div class="price-val na">&#8212;</div><div class="price-val">&#8377;600</div></div>
+    <div class="price-row"><div class="price-item-name">Butterscotch</div><div class="price-val">&#8377;100</div><div class="price-val">&#8377;150</div><div class="price-val">&#8377;140</div><div class="price-val">&#8377;600</div></div>
+    <div class="price-row"><div class="price-item-name">Choco Chips</div><div class="price-val">&#8377;100</div><div class="price-val">&#8377;150</div><div class="price-val na">&#8212;</div><div class="price-val">&#8377;600</div></div>
+    <div class="price-row"><div class="price-item-name">Kaju Kissmiss</div><div class="price-val">&#8377;100</div><div class="price-val">&#8377;150</div><div class="price-val na">&#8212;</div><div class="price-val">&#8377;600</div></div>
+    <div class="price-row"><div class="price-item-name">Blackcurrent</div><div class="price-val">&#8377;110</div><div class="price-val">&#8377;160</div><div class="price-val na">&#8212;</div><div class="price-val">&#8377;700</div></div>
+  </div>
+
+  <div style="margin-top:3rem;background:var(--surface-low);border-radius:16px;padding:1.5rem 2rem;display:flex;gap:1rem;align-items:flex-start;">
+    <span style="font-size:1.3rem;">&#8505;&#65039;</span>
+    <div>
+      <div style="font-family:var(--ff-display);font-weight:700;font-size:0.9rem;color:var(--primary);margin-bottom:0.3rem;">Bulk &amp; Wholesale Orders</div>
+      <div style="font-size:0.85rem;color:var(--on-surface-soft);line-height:1.6;">For bulk orders (4lts and above), contact us directly. Special pricing available for retailers and caterers.</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="CreamyDay" style="height:52px;width:auto;"/>
+      <p>Premium artisanal ice cream. A product of SATYA SAI DAIRY FOODS.</p>
+      <span id="footerMailLink"></span>
+    </div>
+    <div class="footer-col"><h4>Menu</h4>
+      <a href="favourites.html">All Time Favourites</a><a href="chocolates.html">Chocolates</a>
+      <a href="naturals.html">Naturals</a><a href="nuts-berries.html">Nuts &amp; Berries</a>
+      <a href="concepts.html">Concepts</a><a href="novelties.html">Novelties</a>
+    </div>
+    <div class="footer-col"><h4>Company</h4><a href="index.html">Home</a><a href="index.html#enquire">Enquiries</a></div>
+    <div class="footer-col"><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  </div>
+  <div class="footer-bottom">
+    <span>&#169; 2024 SATYA SAI DAIRY FOODS. All rights reserved.</span>
+    <button id="backTop" style="background:none;color:rgba(255,248,243,0.35);font-family:var(--ff-body);font-size:0.78rem;cursor:pointer;border:none;">Back to top &#8593;</button>
+  </div>
+</footer>
+<script src="app.js"></script>
+<script>(function(){var e='creamyday'+'@'+'rediffmail.com';var fl=document.getElementById('footerMailLink');if(fl){var a=document.createElement('a');a.href='mailto:'+e;a.textContent=e;a.style.color='var(--gold)';fl.appendChild(a);}var bt=document.getElementById('backTop');if(bt)bt.onclick=function(){window.scrollTo({top:0,behavior:'smooth'});};})();</script>
+</body>
+</html>

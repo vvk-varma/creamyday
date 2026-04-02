@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CreamyDay &#8211; Premium Artisanal Ice Cream</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav class="nav" id="mainNav">
+  <div class="nav-container">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="CreamyDay" style="height:52px;width:auto;"/>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="favourites.html">Favourites</a>
+      <a href="chocolates.html">Chocolates</a>
+      <a href="naturals.html">Naturals</a>
+      <a href="nuts-berries.html">Nuts &amp; Berries</a>
+      <a href="concepts.html">Concepts</a>
+      <a href="novelties.html">Novelties</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:0.75rem;">
+      <a href="#enquire" class="btn-pill">Enquire</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a><a href="favourites.html">Favourites</a><a href="chocolates.html">Chocolates</a>
+  <a href="naturals.html">Naturals</a><a href="nuts-berries.html">Nuts &amp; Berries</a>
+  <a href="concepts.html">Concepts</a><a href="novelties.html">Novelties</a>
+  <a href="#enquire" style="color:var(--primary);">Enquire</a>
+</div>
+
+<!-- HERO SLIDER -->
+<section class="hero" id="hero">
+  <div class="slides" id="slides">
+
+    <div class="slide active" data-index="0">
+      <div class="slide-inner">
+        <div class="slide-content">
+          <span class="slide-eyebrow">All Time Classics</span>
+          <h1 class="slide-title">All Time<br/><em>Favourites</em></h1>
+          <p class="slide-desc">The timeless flavours that started it all &#8212; Vanilla, Strawberry, Butterscotch, and more in every size.</p>
+          <p class="slide-from">Tubs from <strong>&#8377;80</strong></p>
+          <a href="favourites.html" class="slide-cta">Explore Flavours &#8594;</a>
+        </div>
+        <div class="slide-visual">
+          <div class="slide-blob-bg" style="background:#ffd9dd;"></div>
+          <div class="slide-img-wrap"><img src="images/favourites.png" alt="All Time Favourites" class="slide-img"/></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" data-index="1">
+      <div class="slide-inner">
+        <div class="slide-content">
+          <span class="slide-eyebrow">Rich &amp; Indulgent</span>
+          <h1 class="slide-title">Pure<br/><em>Chocolates</em></h1>
+          <p class="slide-desc">From Belgium Dark to Black Forest &#8212; deep, rich chocolate creations for true cocoa lovers.</p>
+          <p class="slide-from">Tubs from <strong>&#8377;120</strong></p>
+          <a href="chocolates.html" class="slide-cta">Dive In &#8594;</a>
+        </div>
+        <div class="slide-visual">
+          <div class="slide-blob-bg" style="background:#f5d9c0;"></div>
+          <div class="slide-img-wrap"><img src="images/chocolates.png" alt="Chocolates" class="slide-img"/></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" data-index="2">
+      <div class="slide-inner">
+        <div class="slide-content">
+          <span class="slide-eyebrow">Straight from Nature</span>
+          <h1 class="slide-title">Pure<br/><em>Naturals</em></h1>
+          <p class="slide-desc">Real fruit, pure dairy &#8212; Jackfruit, Fresh Mango, Watermelon and more. Nothing artificial, ever.</p>
+          <p class="slide-from">Tubs from <strong>&#8377;100</strong></p>
+          <a href="naturals.html" class="slide-cta">Go Natural &#8594;</a>
+        </div>
+        <div class="slide-visual">
+          <div class="slide-blob-bg" style="background:#d4f0d8;"></div>
+          <div class="slide-img-wrap"><img src="images/naturals.png" alt="Naturals" class="slide-img"/></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" data-index="3">
+      <div class="slide-inner">
+        <div class="slide-content">
+          <span class="slide-eyebrow">Richly Crafted</span>
+          <h1 class="slide-title">Nuts &amp;<br/><em>Berries</em></h1>
+          <p class="slide-desc">Anjeer Badam, Kesar Pista, Berry Berry &#8212; luxury blends for discerning palates.</p>
+          <p class="slide-from">Tubs from <strong>&#8377;120</strong></p>
+          <a href="nuts-berries.html" class="slide-cta">Discover &#8594;</a>
+        </div>
+        <div class="slide-visual">
+          <div class="slide-blob-bg" style="background:#f5e8c0;"></div>
+          <div class="slide-img-wrap"><img src="images/nuts-berries.png" alt="Nuts and Berries" class="slide-img"/></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" data-index="4">
+      <div class="slide-inner">
+        <div class="slide-content">
+          <span class="slide-eyebrow">Bold &amp; Unique</span>
+          <h1 class="slide-title">Creative<br/><em>Concepts</em></h1>
+          <p class="slide-desc">Panchamruth, Pan Masala, Mirchi &#8212; flavours that push the boundary of what ice cream can be.</p>
+          <p class="slide-from">Tubs from <strong>&#8377;100</strong></p>
+          <a href="concepts.html" class="slide-cta">Be Bold &#8594;</a>
+        </div>
+        <div class="slide-visual">
+          <div class="slide-blob-bg" style="background:#e4d5f5;"></div>
+          <div class="slide-img-wrap"><img src="images/concepts.png" alt="Concepts" class="slide-img"/></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" data-index="5">
+      <div class="slide-inner">
+        <div class="slide-content">
+          <span class="slide-eyebrow">Joy in Every Form</span>
+          <h1 class="slide-title">Cups, Cones<br/><em>&amp; More</em></h1>
+          <p class="slide-desc">Bars, Juicy Sticks, Sundaes, Kids Specials &#8212; CreamyDay novelties for every moment and mood.</p>
+          <p class="slide-from">Starting at <strong>&#8377;6</strong></p>
+          <a href="novelties.html" class="slide-cta">See All &#8594;</a>
+        </div>
+        <div class="slide-visual">
+          <div class="slide-blob-bg" style="background:#c8f0e8;"></div>
+          <div class="slide-img-wrap"><img src="images/cover.png" alt="Novelties" class="slide-img"/></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="slider-dots" id="sliderDots">
+    <div class="dot active" data-dot="0"></div><div class="dot" data-dot="1"></div>
+    <div class="dot" data-dot="2"></div><div class="dot" data-dot="3"></div>
+    <div class="dot" data-dot="4"></div><div class="dot" data-dot="5"></div>
+  </div>
+  <button class="slider-arrow prev" id="prevBtn" aria-label="Previous">&#8249;</button>
+  <button class="slider-arrow next" id="nextBtn" aria-label="Next">&#8250;</button>
+</section>
+
+<!-- PHOTO MARQUEE
+<section class="marquee-section" aria-hidden="true">
+  <div class="marquee-track">
+    <img src="images/favourites.png" class="marquee-img" alt=""/><img src="images/chocolates.png" class="marquee-img" alt=""/>
+    <img src="images/naturals.png" class="marquee-img" alt=""/><img src="images/nuts-berries.png" class="marquee-img" alt=""/>
+    <img src="images/concepts.png" class="marquee-img" alt=""/><img src="images/bars.png" class="marquee-img" alt=""/>
+    <img src="images/cones.png" class="marquee-img" alt=""/><img src="images/cups.png" class="marquee-img" alt=""/>
+    <img src="images/kids-sundaes.png" class="marquee-img" alt=""/><img src="images/sundaes.png" class="marquee-img" alt=""/>
+    <img src="images/cover.png" class="marquee-img" alt=""/>
+    <img src="images/favourites.png" class="marquee-img" alt=""/><img src="images/chocolates.png" class="marquee-img" alt=""/>
+    <img src="images/naturals.png" class="marquee-img" alt=""/><img src="images/nuts-berries.png" class="marquee-img" alt=""/>
+    <img src="images/concepts.png" class="marquee-img" alt=""/><img src="images/bars.png" class="marquee-img" alt=""/>
+    <img src="images/cones.png" class="marquee-img" alt=""/><img src="images/cups.png" class="marquee-img" alt=""/>
+    <img src="images/kids-sundaes.png" class="marquee-img" alt=""/><img src="images/sundaes.png" class="marquee-img" alt=""/>
+    <img src="images/cover.png" class="marquee-img" alt=""/>
+  </div>
+</section> -->
+
+<!-- CATEGORY GRID -->
+<section class="cat-grid-section">
+  <div class="section-label">Our Collections</div>
+  <h2 class="section-title">Every Craving, <em style="font-style:italic;color:var(--secondary);">Covered.</em></h2>
+  <div class="cat-bento">
+
+    <a href="favourites.html" class="cat-card cat-card-1 cat-card-h" style="background:#fff5f7;min-height:300px;">
+      <div class="cat-card-text">
+        <span style="font-size:2rem;margin-bottom:0.75rem;display:block;">&#127846;</span>
+        <div class="cat-card-name">All Time Favourites</div>
+        <div class="cat-card-hint">Vanilla &#183; Butterscotch &#183; Pista &#183; 10 flavours</div>
+        <div class="cat-card-arrow" style="margin-top:1rem;">View Menu &#8594;</div>
+      </div>
+      <div class="cat-card-photo-wrap right"><img src="images/favourites.png" alt="All Time Favourites"/></div>
+    </a>
+
+    <a href="chocolates.html" class="cat-card cat-card-2 cat-card-v" style="background:#fdf5ef;min-height:300px;">
+      <div class="cat-card-img-top"><img src="images/chocolates.png" alt="Chocolates"/></div>
+      <div class="cat-card-text">
+        <div class="cat-card-name">Chocolates</div>
+        <div class="cat-card-hint">Black Forest &#183; Belgium Dark &#183; 7 flavours</div>
+        <div class="cat-card-arrow" style="margin-top:0.75rem;">View Menu &#8594;</div>
+      </div>
+    </a>
+
+    <a href="naturals.html" class="cat-card cat-card-3 cat-card-v" style="background:#f3faf4;min-height:300px;">
+      <div class="cat-card-img-top"><img src="images/naturals.png" alt="Naturals"/></div>
+      <div class="cat-card-text">
+        <div class="cat-card-name">Naturals</div>
+        <div class="cat-card-hint">10 real fruit flavours</div>
+        <div class="cat-card-arrow" style="margin-top:0.75rem;">View Menu &#8594;</div>
+      </div>
+    </a>
+
+    <a href="nuts-berries.html" class="cat-card cat-card-4 cat-card-v" style="background:#fffbf0;min-height:300px;">
+      <div class="cat-card-img-top"><img src="images/nuts-berries.png" alt="Nuts and Berries"/></div>
+      <div class="cat-card-text">
+        <div class="cat-card-name">Nuts &amp; Berries</div>
+        <div class="cat-card-hint">9 premium crafted blends</div>
+        <div class="cat-card-arrow" style="margin-top:0.75rem;">View Menu &#8594;</div>
+      </div>
+    </a>
+
+    <a href="concepts.html" class="cat-card cat-card-5 cat-card-v" style="background:#f8f4ff;min-height:300px;">
+      <div class="cat-card-img-top"><img src="images/concepts.png" alt="Concepts"/></div>
+      <div class="cat-card-text">
+        <div class="cat-card-name">Concepts</div>
+        <div class="cat-card-hint">Bold &amp; unique flavour ideas</div>
+        <div class="cat-card-arrow" style="margin-top:0.75rem;">View Menu &#8594;</div>
+      </div>
+    </a>
+
+    <a href="novelties.html" class="cat-card cat-card-6 cat-card-h" style="background:#f0fdf8;min-height:240px;">
+      <div class="cat-card-text" style="padding:2.5rem 3rem;">
+        <span style="font-size:3rem;margin-bottom:0.75rem;display:block;">&#127847;</span>
+        <div class="cat-card-name" style="font-size:1.8rem;">Novelties</div>
+        <div class="cat-card-hint">Cups &#183; Cones &#183; Bars &amp; Juicy Sticks &#183; Kids Sundaes &#183; Sundaes &#8212; from &#8377;6</div>
+        <div class="cat-card-arrow" style="margin-top:1rem;display:inline-flex;">Explore All &#8594;</div>
+      </div>
+      <div class="cat-card-photo-wrap right" style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;padding:1.5rem 1.5rem 1.5rem 0;width:42%;align-items:center;">
+        <img src="images/bars.png"  style="height:160px;object-fit:cover;object-position:top;border-radius:12px;width:100%;" alt="Bars"/>
+        <img src="images/cones.png" style="height:160px;object-fit:cover;object-position:top;border-radius:12px;width:100%;margin-top:-24px;" alt="Cones"/>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div>
+      <div class="about-eyebrow">Our Heritage</div>
+      <h2 class="about-title">Crafted with Love<br/>Since 1994</h2>
+      <p class="about-body">CreamyDay is a product of SATYA SAI DAIRY FOODS &#8212; a name built on trust, tradition, and a relentless passion for quality. We source Grade A farm-fresh dairy daily from local farms, ensuring every lick is as fresh as the sunrise.</p>
+      <p class="about-body">No artificial preservatives. No synthetic colours. Just the pure, honest taste of premium Indian dairy and natural fruit.</p>
+      <div class="about-facts">
+        <div class="about-fact"><div class="about-fact-num">30+</div><div class="about-fact-label">Years of Excellence</div></div>
+        <div class="about-fact"><div class="about-fact-num">50+</div><div class="about-fact-label">Unique Flavours</div></div>
+        <div class="about-fact"><div class="about-fact-num">0</div><div class="about-fact-label">Artificial Preservatives</div></div>
+        <div class="about-fact"><div class="about-fact-num">100%</div><div class="about-fact-label">Farm-Fresh Dairy</div></div>
+      </div>
+    </div>
+    <div class="about-visual">
+      <div class="about-oval" style="overflow:hidden;font-size:0;">
+        <img src="images/cover.png" alt="CreamyDay" style="width:100%;height:100%;object-fit:cover;object-position:top;"/>
+      </div>
+      <div class="about-badge">
+        <p>Manufactured &amp; Marketed by<br/>SATYA SAI DAIRY FOODS</p>
+        <small>Dowlaiswaram, East Godavari</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENQUIRE -->
+<section class="enquire-section" id="enquire">
+  <div>
+    <div class="about-eyebrow">Get In Touch</div>
+    <h2 class="enquire-title">Bulk Orders &amp;<br/>Enquiries Welcome</h2>
+    <p class="enquire-sub">Whether you are a retailer, caterer, or simply want to stock up &#8212; we are here to help.</p>
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon">&#128205;</div>
+        <div class="contact-text"><strong>Address</strong>D.NO. 18-322, Industrial Park, Plot No. C-5 &amp; C-6, Dowlaiswaram, E.G. Dist</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">&#9993;</div>
+        <div class="contact-text"><strong>Email</strong><span id="footerMail" style="color:var(--primary);font-weight:600;"></span></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">&#127981;</div>
+        <div class="contact-text"><strong>Manufacturer</strong>SATYA SAI DAIRY FOODS</div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="enquire-card">
+      <h3>Send an Enquiry</h3>
+      <p>We respond within 24 hours for bulk and wholesale queries.</p>
+      <form action="https://formsubmit.co/vamsi2001uk@gmail.com" method="POST" class="enquire-form">
+  <!-- Honeypot (Anti-spam hidden field) -->
+  <input type="text" name="_honey" style="display:none">
+  
+  <!-- Disable Captcha (Optional, keeps the form looking clean) -->
+  <input type="hidden" name="_captcha" value="false">
+  
+  <!-- Thank you page redirect (Optional, remove if you don't want it)
+  <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html"> -->
+
+  <input class="enquire-input" type="text" name="name" placeholder="Your Name" required/>
+  <input class="enquire-input" type="tel" name="phone" placeholder="Phone Number" required/>
+  <input class="enquire-input" type="email" name="email" placeholder="Email Address" required/>
+  <textarea class="enquire-input" name="message" rows="3" placeholder="Your message / products of interest..." required></textarea>
+  
+  <button type="submit" class="enquire-btn">Send Enquiry</button>
+</form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="CreamyDay" style="height:52px;width:auto;"/>
+      <p>Premium artisanal ice cream. A product of SATYA SAI DAIRY FOODS.</p>
+      <span id="footerMailLink" style="font-size:0.82rem;"></span>
+    </div>
+    <div class="footer-col"><h4>Menu</h4>
+      <a href="favourites.html">All Time Favourites</a><a href="chocolates.html">Chocolates</a>
+      <a href="naturals.html">Naturals</a><a href="nuts-berries.html">Nuts &amp; Berries</a>
+      <a href="concepts.html">Concepts</a><a href="novelties.html">Novelties</a>
+    </div>
+    <div class="footer-col"><h4>Company</h4>
+      <a href="#about">About Us</a><a href="#enquire">Enquiries</a>
+    </div>
+    <div class="footer-col"><h4>Legal</h4>
+      <a href="#">Privacy Policy</a><a href="#">Terms of Service</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&#169; 2024 SATYA SAI DAIRY FOODS. All rights reserved.</span>
+    <button id="backTop" style="background:none;color:rgba(255,248,243,0.35);font-family:var(--ff-body);font-size:0.78rem;cursor:pointer;border:none;">Back to top &#8593;</button>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script>
+(function(){
+  var e='creamyday'+'@'+'rediffmail.com';
+  var fm=document.getElementById('footerMail');
+  var fl=document.getElementById('footerMailLink');
+  if(fm) fm.textContent=e;
+  if(fl){ var a=document.createElement('a'); a.href='mailto:'+e; a.textContent=e; a.style.color='var(--gold)'; fl.appendChild(a); }
+  var bt=document.getElementById('backTop');
+  if(bt) bt.onclick=function(){ window.scrollTo({top:0,behavior:'smooth'}); };
+})();
+</script>
+</body>
+</html>

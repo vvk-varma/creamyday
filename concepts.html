@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Concepts &#8211; CreamyDay</title>
+<link rel="stylesheet" href="styles.css"/>
+<style>.ptable-3 .price-table-head,.ptable-3 .price-row{grid-template-columns:1.8fr repeat(3,1fr);}@media(max-width:640px){.ptable-3 .price-table-head,.ptable-3 .price-row{grid-template-columns:1.5fr repeat(3,1fr);font-size:0.8rem;}}</style>
+</head>
+<body>
+<nav class="nav" id="mainNav">
+  <div class="nav-container">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="CreamyDay" style="height:52px;width:auto;"/></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a><a href="favourites.html">Favourites</a><a href="chocolates.html">Chocolates</a>
+      <a href="naturals.html">Naturals</a><a href="nuts-berries.html">Nuts &amp; Berries</a><a href="concepts.html" class="active">Concepts</a><a href="novelties.html">Novelties</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:0.75rem;"><a href="index.html#enquire" class="btn-pill">Enquire</a><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a><a href="favourites.html">Favourites</a><a href="chocolates.html">Chocolates</a>
+  <a href="naturals.html">Naturals</a><a href="nuts-berries.html">Nuts &amp; Berries</a><a href="concepts.html">Concepts</a><a href="novelties.html">Novelties</a>
+</div>
+<header class="cat-header" style="background:linear-gradient(135deg,#fff8f3 60%,#f8f4ff);">
+  <div class="cat-blob" style="background:#e4d5f5;opacity:0.3;"></div>
+  <div class="cat-header-grid">
+    <div class="cat-header-inner" style="position:relative;z-index:2;">
+      <span class="cat-eyebrow">Bold &amp; Experimental</span>
+      <h1 class="cat-title">Concepts</h1>
+      <p class="cat-desc">Daring flavour ideas that push the boundary of what ice cream can be &#8212; Panchamruth, Pan Masala, Mirchi and more for the adventurous palate.</p>
+    </div>
+    <div class="cat-header-img-wrap"><img src="images/concepts.png" alt="CreamyDay Concepts" class="cat-header-img"/></div>
+  </div>
+</header>
+
+<div class="price-section">
+  <div class="price-section-title">Concept Flavours</div>
+  <p class="price-section-sub">All prices in &#8377;. Available in Tub 500ml, Tub 1000ml, and Bulk 4lts.</p>
+  <div class="ptable-3">
+    <div class="price-table-head"><span>Flavour</span><span>Tub 500ml</span><span>Tub 1000ml</span><span>Bulk 4lts</span></div>
+    <div class="price-row"><div><div class="price-item-name">Panchamruth</div><div class="price-item-size">A sacred five-ingredient blend</div></div><div class="price-val">&#8377;120</div><div class="price-val">&#8377;210</div><div class="price-val">&#8377;1000</div></div>
+    <div class="price-row"><div><div class="price-item-name">Pan Masala</div><div class="price-item-size">Bold paan-inspired flavour</div></div><div class="price-val">&#8377;120</div><div class="price-val">&#8377;210</div><div class="price-val">&#8377;1000</div></div>
+    <div class="price-row"><div><div class="price-item-name">Mirchi</div><div class="price-item-size">Spicy chilli &#8212; for the brave</div></div><div class="price-val">&#8377;120</div><div class="price-val">&#8377;210</div><div class="price-val">&#8377;1000</div></div>
+    <div class="price-row"><div><div class="price-item-name">Tutti Frutti</div><div class="price-item-size">Colourful mixed fruit medley</div></div><div class="price-val">&#8377;100</div><div class="price-val">&#8377;150</div><div class="price-val">&#8377;600</div></div>
+  </div>
+  <div style="margin-top:3rem;background:#f8f4ff;border-radius:16px;padding:1.5rem 2rem;display:flex;gap:1rem;">
+    <span style="font-size:1.3rem;">&#128161;</span>
+    <div><div style="font-family:var(--ff-display);font-weight:700;font-size:0.9rem;color:var(--primary);margin-bottom:0.3rem;">For the Adventurous</div><div style="font-size:0.85rem;color:var(--on-surface-soft);line-height:1.6;">The Mirchi flavour is particularly popular at events and festivals. Want a custom concept flavour for your occasion? <a href="index.html#enquire" style="color:var(--primary);font-weight:600;">Get in touch &#8594;</a></div></div>
+  </div>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><img src="images/logo.png" alt="CreamyDay" style="height:52px;width:auto;"/><p>Premium artisanal ice cream. A product of SATYA SAI DAIRY FOODS.</p><span id="footerMailLink"></span></div>
+    <div class="footer-col"><h4>Menu</h4><a href="favourites.html">All Time Favourites</a><a href="chocolates.html">Chocolates</a><a href="naturals.html">Naturals</a><a href="nuts-berries.html">Nuts &amp; Berries</a><a href="concepts.html">Concepts</a><a href="novelties.html">Novelties</a></div>
+    <div class="footer-col"><h4>Company</h4><a href="index.html">Home</a><a href="index.html#enquire">Enquiries</a></div>
+    <div class="footer-col"><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  </div>
+  <div class="footer-bottom"><span>&#169; 2024 SATYA SAI DAIRY FOODS. All rights reserved.</span><button id="backTop" style="background:none;color:rgba(255,248,243,0.35);font-family:var(--ff-body);font-size:0.78rem;cursor:pointer;border:none;">Back to top &#8593;</button></div>
+</footer>
+<script src="app.js"></script>
+<script>(function(){var e='creamyday'+'@'+'rediffmail.com';var fl=document.getElementById('footerMailLink');if(fl){var a=document.createElement('a');a.href='mailto:'+e;a.textContent=e;a.style.color='var(--gold)';fl.appendChild(a);}var bt=document.getElementById('backTop');if(bt)bt.onclick=function(){window.scrollTo({top:0,behavior:'smooth'});};})();</script>
+</body>
+</html>
